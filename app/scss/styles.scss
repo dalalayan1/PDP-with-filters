@@ -1,0 +1,188 @@
+/* Common - START */
+body{
+    background: #f6f6f6
+}
+a {
+    color: inherit;
+}
+a:hover, a:focus {
+    color: inherit
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.filter-wrapper {
+    background-color: #fff;
+    .box-filter-wrapper {
+        display: inline-block;
+        position: relative;
+    }
+    .box-filter-wrapper>a {
+        display: inline-block;
+        text-transform: capitalize;
+        min-width: 110px;
+        border: 1px solid #D2D2D2;
+        border-radius: 2px;
+        background-color: #fafafa;
+        padding: 6px 5px;
+        text-align: center;
+    }
+    .box-filter-dropdown {
+        // display: none;
+        width: 190%;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #dadada;
+        border-bottom: 0;
+        left: 0;
+        top: 33px;
+        background: #fff;
+        z-index: 1002;
+    }
+    .box-filter-dropdown>li>a {
+        display: block;
+        padding: 4px 13px 4px 13px;
+        border-bottom: 1px solid #dadada;
+        font-family: NHaasGroteskDSStd-55Rg;
+        line-height: 1.83;
+        text-align: left;
+        color: #767676;
+    }
+    .box-filter-dropdown>li>a>input {
+        margin-right: 5px;
+    }
+    .subfilter-dropdown {
+        margin-left: 10px;
+    }
+}
+
+
+.catagoryHead{
+    color: #444;
+    font-weight: 600;
+    font-size: 21px;
+}
+.main-container {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .mobile-disp-none {
+        display: none;
+    }
+    .mobile-disp-block {
+        display: block;
+    }
+    .container-fluid {
+        padding: 0;
+    }
+}
+@media (min-width: 768px) {
+    .desktop-disp-none {
+        display: none;
+    }
+    .desktop-disp-block {
+        display: block;
+    }
+}
+/* Common - END */
+/* GridTypeOne - START */
+
+.gridTypeOneContainer{
+    min-height: 340px;
+    border: 1px solid #EAEAEA;
+    background: #fff;
+    position: relative;
+    margin-bottom: 24px;
+    text-align: left;
+    padding: 15px 0;
+    .brandImage{
+        display: block;
+        height: 200px;
+        border-bottom: 1px dashed #CECECE;
+        position: relative;
+        overflow: hidden;
+    }
+    .brandImage img{
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    .brandImage::after{
+        content: "";
+        background: url(/img/ico/scissor.png) no-repeat;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        position: absolute;
+        bottom: -9px;
+        left: 25px;
+    }
+    .brandName{
+        float: right;
+        margin-right: 12px;
+        border-bottom: 3px solid #cc5251;
+        line-height: 28px;
+        font-weight: bold;
+    }
+    .brandName:after{
+        content: "";
+        clear: both;
+    }
+    .brandDesc{
+        height: 80px;
+        color: #4a4a4a;
+        font-size: 17px;
+        overflow: hidden;
+        clear: both;
+        padding: 15px 17px 0;
+    }
+    .promoText{
+        font-size: 12px;
+        padding: 15px 17px 0;
+        color: gray;
+    }
+    .priceContainer {
+        color: #1669b0;
+        font-size: 15px;
+        padding: 15px 17px 0;
+        span {
+            padding-right: 10px;
+        }
+        .offerPrice {
+            font-size: 20px;
+            color: #20CACA;
+        }
+        .strikedPrice {
+            color: gray;
+        }
+        .strikedPrice:before {
+            content: '________';
+            height: 1px;
+            color: gray;
+            position: absolute;
+            bottom: 39px;
+        }
+        .discount {
+            color: #DB9300;
+        }
+    }
+    .gridAncor{
+        margin-left: 4%;
+        width: 92%;
+        position: absolute;
+        bottom: 15px;
+        font: normal 17px/34px 'Arial,Helvetica,sans-serif';
+        font-weight: 700;
+        text-align: center;
+        background-color: #1e8cbe;
+        color: white;
+        border-bottom: 2px solid #1669AF;
+    }
+}
+/* GridTypeOne - END */
