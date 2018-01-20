@@ -1,5 +1,5 @@
 # PDP
-## A simple Product Dsiplay Page using category functionality
+## A simple Product Dsiplay Page along with category filtering
 
 - Data is fetched from real API.
 - App is created using react-create-app generator.
